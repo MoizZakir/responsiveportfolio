@@ -1,0 +1,146 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 820px) {
+    .container{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 989px){
+    #search input{
+        width: 100%;
+    }
+    #search{
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 819px){
+    #menuebar{
+        display: inline-block;
+    }
+
+}
+#items{
+display:flex;
+flex-direction: column;
+align-items: center;
+}
+#items a:hover{
+    display: block;
+   
+    background-color: rgb(170, 170, 125);
+}
+#items a{
+    padding: 12px;
+    margin-top: 14px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: sans-serif;
+    color: blueviolet;
+}
+#menuebar:hover #resnavitem{
+    display: block;
+}
+#resnavitem{
+    display: none;
+    width: 100%;
+    height: 260px;
+    background-color: aliceblue;
+    position: fixed;
+    margin-left:0px;
+    left: 0px;
+    right: 120px;
+}
+#menuebar{
+    display: block;
+}
+.menuebtn:hover{
+    background-color: rgb(130, 165, 130);
+}
+.menuebtn{
+    position: absolute;
+    left: 95%;
+    top: 12px;
+    
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: rgb(155, 154, 152);
+    background-image: url('pngegg.png');
+    
+    background-size: cover;
+}
+#logoname{
+animation: logoanimation;
+animation-duration: 1.5s;
+animation-timing-function: linear;
+
+}
+@keyframes logoanimation {
+    from{
+        transform: rotateX(100deg)
+    }
+    to{
+        transform: rotate(0deg);
+    }
+}
+.container ul{
+    list-style-type: none;
+    display: flex;
+    margin-top: 15px;
+  
+    
+
+
+    font-family: 'Edu SA Beginner';
+}
+#search:hover::before{
+    display: none;
+      border: 1px solid white;
+
+}
+
+#search{
+    margin-top: 15px;
+    display: flex;
+   
+}
+#search input{
+    font-size: 19px;
+    font-family: sans-serif;
+    
+    border-radius: 10px;
+    height: 33px;
+    border: none;
+    background-color: rgb(218, 243, 243);
+}
+#logoname{
+    font-family: 'Edu SA Beginner', cursive;
+    color: floralwhite;
+    margin-top: 15px;
+    font-size: 25px;margin-left: 3px;
+}
+.container ul li:hover{
+  
+    
+    background-color: cadetblue;
+}
+.container ul li{
+    margin-left: 35px;
+    border-radius: 10px;
+    
+}
+.container ul li a{
+    padding: 0px 20px;
+    color: blanchedalmond ;
+    text-decoration: none;
+    font-size: 22px;
+    display: block;
+}
+#firstli{
+    background-color: cadetblue;
+}
